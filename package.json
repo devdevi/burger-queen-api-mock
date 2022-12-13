@@ -1,11 +1,14 @@
 {
   "name": "burger-queen-api-mock",
   "version": "1.0.0",
+  "homepage": "http://devdevi.github.io/burger-queen-api-mock",
   "description": "A mock of Burger Queen API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Sergio Sinuco <ssinuco@gmail.com>",
   "license": "MIT",
